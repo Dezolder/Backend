@@ -30,18 +30,14 @@ async function printNotes() {
     const notes = await getNotes();
     console.log("There a list of notes:");
     notes.forEach((element) => {
-        console.log(element.title);
+        console.log(chalk.gray(element.id), chalk.yellowBright(element.title));
     });
 }
 
 async function removeNote({ id }) {
-    // console.log("id:", typeof id);
     const notes = await getNotes();
-    notes.filter((item) => {
-        item.id !== id;
-    });
-    // await fs.rm(notePath);
-    await fs.writeFile(notePath, JSON.stringify(notes));
+    const notest = notes.filter((item) => item.id !== id);
+    await fs.writeFile(notePath, JSON.stringify(notest));
     console.log("Deleted id:", chalk.red(id));
 }
 
