@@ -1,0 +1,19 @@
+{
+    "name": "node-app",
+    "version": "1.0.0",
+    "description": "Simple NodeJS Application",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "keywords": [
+        "node",
+        "javascript"
+    ],
+    "author": "Evgeniy Zhukov <evgeniy.zhukov.2021@gmail.com>",
+    "license": "ISC",
+    "dependencies": {
+        "chalk": "^4.1.2",
+        "yargs": "^17.6.2"
+    }
+}
