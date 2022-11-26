@@ -36,16 +36,14 @@
                     <li
                         class="list-group-item d-flex justify-content-between align-content-center"
                     >
-                    <span id="<%= notes[i].id %>">
-                        <%= notes[i].title %>
-                    </span>
+                        <div id="<%= notes[i].id %>"><%= notes[i].title %></div>
                         <div>
                             <button
                                 class="btn btn-primary"
                                 data-type="edit"
                                 data-id="<%= notes[i].id %>"
                             >
-                               Редактировать
+                                Редактировать
                             </button>
                             <button
                                 class="btn btn-danger"
